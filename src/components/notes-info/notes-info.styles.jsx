@@ -1,4 +1,4 @@
-import { Box, Button } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
 import styled from "styled-components";
 
 export const StyledBox = styled(Box)`
@@ -64,3 +64,11 @@ export const SavedNotesContainer = styled.div`
 `;
 
 export const OptionsContainer = styled.div``;
+
+export const Discription = styled.p`
+  @media (max-width: 600px) {
+    width: 280px;
+    font-size: 14px;
+    word-wrap: break-word;
+  }
+`;

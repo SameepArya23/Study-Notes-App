@@ -2,6 +2,7 @@ import { Typography } from "@mui/material";
 import { useContext, useEffect, useState } from "react";
 import { UserDataContext } from "../../context/user-data.context";
 import {
+  Discription,
   InputContainer,
   NotesField,
   OptionsContainer,
@@ -42,9 +43,7 @@ const NotesInfo = () => {
             <Typography variant="h3" gutterBottom>
               {notes ? notes.topic : ""}
             </Typography>
-            <Typography variant="subtitle3" gutterBottom>
-              {notes ? notes.discription : ""}
-            </Typography>
+            <Discription>{notes ? notes.discription : ""}</Discription>
           </InputContainer>
           <StyledButton
             variant="contained"
